@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type="text/css" href="style.css">
+    <title>Create Route</title>
+</head>
+<body>
+    <form action="http://localhost:3000/create" method="post">
+        <input type="text" id="nume" name="nume">
+        <label for="nume">Denumire film</label>
+        <br>
+        <input type="text" id="price" name="price">
+        <label for="price">Pret bilet film</label>
+        <br>
+        <input type="text" id="disponibilitate" name="disponibilitate">
+        <label for="disponibilitate">Disponibilitate film</label>
+        <br>
+        <input type="Submit" id="backread">
+        <br>
+    </form>
+    <button onclick="Bilete1('read')">Back</button>
+
+<script src="templaterute.js"></script>
+</body>
+</html>

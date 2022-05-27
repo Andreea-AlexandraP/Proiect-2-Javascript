@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Alexandra"/>
+     <title> 
+           -CINEMA- 
+       </title> 
+      <link rel="stylesheet" type="text/css" href="pagina.css"/>
+   </head>
+   <body>
+    <h1 class="styleh1" id="cinema" onclick="myFunction2()"> CINEMA </h1>
+    <h2 id="demo"></h2>
+    <h3 class="style">Dark Mode/Light Mode</h2>
+<p class="style">Apasa pe buton pentru a trece la Dark Mode.</p>
+<button onclick="myFunction1()">Dark Mode</button>
+<br>
+<br>
+<p id="demo">Program de functionare</p>
+<button id="b1" onclick="myFunction()">Remove</button>
+<br>
+<br>
+<div id="new">
+<p id="p3">Va asteptam zilnic, in timpul saptamanii, intre orele 9:00-23:00, pentru a viziona cele mai de succes filme.</p>
+</div>
+<br>
+<img id="img1" src="cinema.jpg"></img>
+<p id="p1">Ora actuala este:</p>
+<p id="ceas"></p>
+<br>
+<br>
+<br>
+<br>
+<div class="LogIn-container">
+  <form class="LogIn" onsubmit="validate()">
+      <button type="button" class="btn-exit">x</button>
+      <label for="firstName" class="firstName-LogIn">FIRST NAME</label><br>
+      <input type="text" id="firstName" placeholder="firstName" name="firstName" class="LogName"><br>
+      <label for="lastName" class="lastName-LogIn">LAST NAME</label><br>
+      <input type="text" id="lastName" name="lastName" placeholder="lastName" class="LogName"><br>
+      <button type="submit" class="btn-submit">LOG IN</button>
+  </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div id="iddiv">
+    <form action="/action_page.php">
+      <label for="fname">Prenume</label>
+      <input type="text" id="fname" name="firstname" placeholder="Prenumele dvs..">
+  
+      <label for="lname">Numele de familie</label>
+      <input type="text" id="lname" name="lastname" placeholder="Numele dvs de familie..">
+
+      <label for="fname">Numarul de bilete pe care doriti sa le rezervati</label>
+      <input type="text" onkeypress="myFunction3()" name="numar" placeholder="Numar..">
+  
+      <label for="country">Filmul pentru care doriti sa cumparati bilet:</label>
+      <select id="country" name="country">
+        <option value="Avatar 2">Avatar 2</option>
+        <option value="Avengers Infinity War Part 1">Avengers Infinity War Part 1</option>
+        <option value="Avengers Infinity War Part 2">Avengers Infinity War Part 2</option>
+        <option value="Lost Daughter">Lost Daughter</option>
+        <option value="Plan A">Plan A</option>
+        <option value="Infinite">Infinite</option>
+        <option value="Awake">Awake</option>
+        <option value="Red Notice">Red Notice</option>
+        <option value="Aftermath">Aftermath</option>
+        <option value="The Fallout">The Fallout</option>
+
+        
+
+        <input type="submit" value="Submit">
+      </select>
+    
+
+  </div>
+
+  <p>Lista filmelor disponibile in ultimele 3 luni:</p>
+  <p id="array"></p>
+  <br>
+  <br>
+  <br>
+  <p>Lista filmelor disponibile la momentul actual:</p>
+  <p id="array2"></p>
+  <br>
+  <br>
+  <p>Lista filmelor disponibile in ultimele 3 luni sortate alfabetic:</p>
+  <p id="array3"></p>
+  <br>
+  <br>
+  <p>Lista filmelor disponibile la momentul actual si care vor fi disponibile in curand:</p>
+  <p id="array5"></p>
+
+
+<script src="pagina.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
